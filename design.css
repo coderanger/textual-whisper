@@ -75,11 +75,12 @@ body[dir=ltr] .time {
 	color: #999;
 	-webkit-user-select: none;
 	text-shadow: #fff 0px 1px;
-	font-weight: bold;
+	font-weight: normal;
 	margin-right: 10px;
-	line-height: 30px;
+	line-height: 20px;
 	font-style: normal;
 	text-align: right;
+	font-size: 80%;
 }
 
 
@@ -236,7 +237,7 @@ body div[ltype*=privmsg][mtype*=myself] .message {
 
 body div[ltype*=privmsg] .sender {
 	font-weight: 700;
-	width:134px;
+	width:88px;
 	text-shadow: #fff 0px 1px;
 	background-color: #eee;
 	min-height:30px;
@@ -267,16 +268,16 @@ body div[ltype*="action"] .message {
 }
 
 body div[ltype*=action] .sender {
-	position: absolute;
+/*	position: absolute;
 	top: 0;
 	bottom: 0;
-	left: 0;
+	left: 0;*/
 	font-weight: 700;
-	width:134px;
+	/*width:134px;*/
 	text-shadow: #fff 0px 1px;
 	background-color: #eee;
 	height:30px;
-	padding-right:5px;
+	/*padding-right:5px;*/
 	text-align:right;
 	display:inline-block;
 	overflow: auto;
@@ -294,7 +295,7 @@ body div[ltype*=action][mtype*=myself] .sender {
 }
 
 body[dir=ltr] div[ltype*=action] .sender:before {
-	margin-right: 0.4em;
+	/*margin-right: 0.4em;*/
 }
 
 body[dir=ltr] div[ltype*=action] .sender:after {
@@ -364,12 +365,12 @@ body div.line[command="722"] .message {
 
 body span.message{
 	position: relative;
-	padding-left: 150px;
+	padding-left: 104px;
 	display:table-cell;
 	vertical-align: middle;
 	min-height: 30px;
-	line-height: 30px;
-	width: calc(100% - 250px);
+	line-height: 20px;
+	width: calc(100% - 204px);
 	word-break: normal;
 }
 
@@ -572,7 +573,7 @@ body .inline_nickname[colornumber='18'] {
 body .sender[ltype*=normal][colornumber='19'],
 body .sender[mtype*=normal][colornumber='19'],
 body .inline_nickname[colornumber='19'] {
-	color: #6df;
+	color: #E8930C;
 }
 
 body .sender[ltype*=normal][colornumber='20'],

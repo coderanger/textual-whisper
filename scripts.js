@@ -67,4 +67,17 @@ Textual.viewFinishedReload = function()
 
 Textual.newMessagePostedToView = function (lineNum) {
 	Whisper.coalesceLines(lineNum);
+
+	//MY HAX
+	var inline_nicknames = document.querySelectorAll('#line-'+lineNum+' .inline_nickname');
+	for (var i = 0; i < inline_nicknames.length; ++i) {
+		var item = inline_nicknames[i];
+		var contents = item.innerHTML.toLowerCase();
+		if(contents === 'chef' || contents === 'action' || contents === 'path' || contents === 'fetch') {
+			item.classList.remove('inline_nickname');
+			item.removeAttribute('oncontextmenu');
+			item.removeAttribute('ondblclick');
+		}
+	}
+	//END MY HAX
 };
